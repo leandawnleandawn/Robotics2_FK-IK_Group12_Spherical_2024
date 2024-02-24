@@ -51,7 +51,6 @@
    0 & sin(\alpha_{n}) & cos(\alpha_{n}) & d_{n} \\
    0 & 0 & 0 & 1
    \end{bmatrix}$$
-   
    </li>
    <li> Getting the Dot Product of all Homogenous Transformation Matrix together </li>
 </ol>
