@@ -1,0 +1,3 @@
+A. Written derivation of the inverse kinematics using graphical method.									
+B. Python code.									
+C. 5 trials in table for the comparison of Inverse Kinematics in MATLAB and Python 									
