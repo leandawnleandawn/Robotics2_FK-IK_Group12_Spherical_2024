@@ -66,7 +66,8 @@
   <li>Law of Cosines</li>
   <li>Pythagorean Theorem</li>
  </ul>
- ## Procedure Forward Kinematics:
+
+## Procedure Forward Kinematics:
  <ol>
  <li>Draw the kinematic diagram with labels of the Spherical Manipulator.	</li>
  <li>Assign frames using D-H Frame Rules.</li>
