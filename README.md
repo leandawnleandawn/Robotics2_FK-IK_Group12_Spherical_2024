@@ -54,14 +54,21 @@
    </li>
    <li> Getting the Dot Product of all Homogenous Transformation Matrix together </li>
 </ol>
+
 ### Inverse Kinematics
  If the following Forward Kinematics focuses on the joint variables to find the position vector. The following Inverse Kinematics is the opposite, where we find the joint variables of the system via the use of position vector.
  The most effective method of solving the Inverse Kinematics is Numerical Methods, however this is accurate however this is compicated to compute. Graphical Method is the best method of solving Serial Manipulators, however, One must consider the implications of having
  a undefined Solutions. 
-
+#### Inverse Kinematics Graphical Method
+ When solving the Inverse Kinematics of the Serial manipulator, we are using the foundations of Trignometry. The following approaches are the following:
+ <ul>
+  <li>Trigonometric Ratios</li>
+  <li>Law of Cosines</li>
+  <li>Pythagorean Theorem</li>
+ </ul>
  ## Procedure Forward Kinematics:
  <ol>
- <li>Draw the kinematic diagram with labels of the  (assigned mechanical manipulator).	</li>
+ <li>Draw the kinematic diagram with labels of the Spherical Manipulator.	</li>
  <li>Assign frames using D-H Frame Rules.</li>
  <li>Obtain the Parametric Table.</li>
  <li>Program the Forward Kinematics in Python and MATLAB.</li>
@@ -76,7 +83,7 @@
 
 ## Procedure Inverse Kinematics:
 <ol>
-<li>Derive the (assigned mechanical manipulator) inverse kinematics solution using graphical method.</li>
+<li>Derive the Spherical Manipulator inverse kinematics solution using graphical method.</li>
 <li>Program the Inverse Kinematics in Python.</li>
 <li>Perform the experimentation of comparing the position vector and joint variables from the Python program to the MATLAB program.</li>
 <li><ol>Provide the following as output of the experiment:
