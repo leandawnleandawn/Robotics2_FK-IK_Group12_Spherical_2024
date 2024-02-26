@@ -2,17 +2,21 @@
 ## Proponents:
 
  Dianne Mae Ortega
+ 
  Ivan Russ Oxillo
+ 
  Jancen Mendoza
+ 
  Lyndon Allen Sales
 
  ## Objectives:
-   To perform the Forward and Inverse Kinematics of the Spherical Manipulator
+   To clearly perform the Forward and Inverse Kinematics of the Spherical Manipulator
 
 ## Theory:
   When dealing with Mechanical Manipulators (Arm-Type Robots/ Leg-Type Robots), the main objective of the Robotics Engineer is to 
   design the following robot with its dinstinctive joints and the position on the following space. One method to know about that is
-  the use of **Forward and Inverse Kinematics**
+  the use of **Forward and Inverse Kinemtics** 
+
 ### Forward Kinematics
   It is defined forward because we tend to assign joint variables to know where the following robot is in the given space (SE(3)). It is
   known by the following formmula:
