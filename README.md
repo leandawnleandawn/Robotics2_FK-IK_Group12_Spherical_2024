@@ -92,8 +92,11 @@
 <li>Python Code</li>
 <li>5 trials in table for the comparison of Inverse Kinematics in MATLAB and Python</li>
 </ol></li>
- 
+
+## D-H Parametric table of Spherical Manipulator
 </ol>
+
+![421668234_403017508989038_658074442315959319_n](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/157699815/008f5e5c-eb10-42e5-ae67-f461739e19a0)
 
  
 </ol>
