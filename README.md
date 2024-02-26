@@ -108,7 +108,7 @@
 ## Inverse Kinematics of Spherical Manipulator
 <ol>
  
-![421995649_1149281762738087_6404656819298399393_n]()
+![421995649_1149281762738087_6404656819298399393_n](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/157699815/811c303b-9367-422e-a1a8-efcbe1089e5e)
 
 </ol>
  
