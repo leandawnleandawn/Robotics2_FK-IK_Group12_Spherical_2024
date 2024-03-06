@@ -133,9 +133,7 @@ class FkinWindow(Window):
         forward.grid(row=0, column=0)
         reset = tk.Button(BF, text = "Reset", command=self.reset)
         reset.grid(row=0, column=1)
-        
-        
-        
+          
     def fkin(self):
         self.Xdata.config(state= tk.NORMAL)
         self.Ydata.config(state= tk.NORMAL)
@@ -189,6 +187,11 @@ class FkinWindow(Window):
 class IkinWindow(Window):
     def __init__(self):
         super().__init__()
+        
+        self.T1data.config(state= tk.DISABLED)
+        self.T2data.config(state= tk.DISABLED)
+        self.d3data.config(state= tk.DISABLED)
+        
         self.windowTitle.title("Inverse Kinematics")
         
         BF = tk.LabelFrame(master=self.windowTitle, font=(5))
@@ -200,7 +203,18 @@ class IkinWindow(Window):
         reset.grid(row=0, column=1)
         
     def ikin(self):
-        pass
+        try:
+            a1 = float(self.a1data.get()) / 100
+            a2 = float(self.a2data.get()) / 100
+            a3 = float(self.a3data.get()) / 100
+            x = float(self.Xdata.get()) / 100
+            y = float(self.Ydata.get()) / 100
+            z = float(self.Zdata.get()) / 100
+        except ValueError:
+            pop_up = tk.Toplevel(master= robot)
+            label = tk.Label(pop_up, text = "Use the approriate syntax (float)")
+            label.pack()
+        
         
 class JBinWindow(Window):
     def __init__(self):
