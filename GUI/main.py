@@ -1,6 +1,5 @@
 import tkinter as tk
 import numpy as np
-import customtkinter as ctk
 from roboticstoolbox import SerialLink, RevoluteDH, PrismaticDH
 
 class RoboticProgram(tk.Tk):
@@ -195,10 +194,13 @@ class IkinWindow(Window):
         BF = tk.LabelFrame(master=self.windowTitle, font=(5))
         BF.grid(row=1, column=0)
         
-        inverse= tk.Button(BF, text = "Inverse")
+        inverse= tk.Button(BF, text = "Inverse", command=self.ikin)
         inverse.grid(row=0, column=0)
-        reset = tk.Button(BF, text = "Reset")
+        reset = tk.Button(BF, text = "Reset", command=self.reset)
         reset.grid(row=0, column=1)
+        
+    def ikin(self):
+        pass
         
 class JBinWindow(Window):
     def __init__(self):
@@ -208,7 +210,7 @@ class JBinWindow(Window):
         BF = tk.LabelFrame(master=self.windowTitle, font=(5))
         BF.grid(row=1, column=0)
         
-        jacobian= tk.Button(BF, text = "Inverse")
+        jacobian= tk.Button(BF, text = "Jacobian")
         jacobian.grid(row=0, column=0)
         reset = tk.Button(BF, text = "Reset")
         reset.grid(row=0, column=1)
