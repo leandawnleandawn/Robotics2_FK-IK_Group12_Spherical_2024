@@ -69,4 +69,4 @@ for i,j in htm.items():
     
 result = np.dot(np.dot(htm[0], htm[1]), htm[2])
 print("H0_3")
-print(np.round(result, 2))
+print(np.round(result[0][3], 2))
