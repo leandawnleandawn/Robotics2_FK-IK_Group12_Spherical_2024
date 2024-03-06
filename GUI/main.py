@@ -222,17 +222,17 @@ class IkinWindow(Window):
             label = tk.Label(pop_up, text = "Use the approriate syntax (float)")
             label.pack()
             
-        t1, t2, d3 = self.invKins(a1, x, y, z)
+        t1, t2, d3 = self.invKins(a1, a2, a3, x, y, z)
         
         self.T1data.insert(tk.END, t1)
         self.T2data.insert(tk.END, t2)
         self.d3data.insert(tk.END, d3)
         
-        self.Xdata.config(state= tk.DISABLED)
-        self.Ydata.config(state= tk.DISABLED)
-        self.Zdata.config(state= tk.DISABLED)
+        self.T1data.config(state= tk.DISABLED)
+        self.T2data.config(state= tk.DISABLED)
+        self.d3data.config(state= tk.DISABLED)
             
-    def invKins(self, a1, x_03, y_03, z_03):
+    def invKins(self, a1, a2, a3, x_03, y_03, z_03):
         s = z_03 - a1
         r = np.sqrt((x_03**2) + (y_03**2))
         theta1 = np.arctan(y_03/x_03) * 180/np.pi
