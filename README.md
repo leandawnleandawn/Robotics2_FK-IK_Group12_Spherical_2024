@@ -2,17 +2,21 @@
 ## Proponents:
 
  Dianne Mae Ortega
+ 
  Ivan Russ Oxillo
+ 
  Jancen Mendoza
+ 
  Lyndon Allen Sales
 
  ## Objectives:
-   To perform the Forward and Inverse Kinematics of the Spherical Manipulator
+   To clearly perform the Forward and Inverse Kinematics of the Spherical Manipulator
 
 ## Theory:
   When dealing with Mechanical Manipulators (Arm-Type Robots/ Leg-Type Robots), the main objective of the Robotics Engineer is to 
   design the following robot with its dinstinctive joints and the position on the following space. One method to know about that is
-  the use of **Forward and Inverse Kinematics**
+  the use of **Forward and Inverse Kinemtics** 
+
 ### Forward Kinematics
   It is defined forward because we tend to assign joint variables to know where the following robot is in the given space (SE(3)). It is
   known by the following formmula:
@@ -92,9 +96,19 @@
 <li>Python Code</li>
 <li>5 trials in table for the comparison of Inverse Kinematics in MATLAB and Python</li>
 </ol></li>
+
+## D-H Parametric table of Spherical Manipulator
+</ol>
+
+![421668234_403017508989038_658074442315959319_n](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/157699815/008f5e5c-eb10-42e5-ae67-f461739e19a0)
+
  
 </ol>
 
+## Inverse Kinematics of Spherical Manipulator
+<ol>
  
+![421995649_1149281762738087_6404656819298399393_n](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/157699815/811c303b-9367-422e-a1a8-efcbe1089e5e)
+
 </ol>
  
