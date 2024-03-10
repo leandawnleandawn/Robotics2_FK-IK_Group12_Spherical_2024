@@ -176,9 +176,9 @@ class FkinWindow(Window):
             qlim_error.pack()
         else:
             
-            self.Xdata.insert(tk.END, np.round(result[0,3],2))
-            self.Ydata.insert(tk.END, np.round(result[1,3],2))
-            self.Zdata.insert(tk.END, np.round(result[2,3],2))
+            self.Xdata.insert(tk.END, np.round(result[0,3] * 100,2))
+            self.Ydata.insert(tk.END, np.round(result[1,3] * 100,2))
+            self.Zdata.insert(tk.END, np.round(result[2,3] * 100,2))
             self.Xdata.config(state= tk.DISABLED)
             self.Ydata.config(state= tk.DISABLED)
             self.Zdata.config(state= tk.DISABLED)
