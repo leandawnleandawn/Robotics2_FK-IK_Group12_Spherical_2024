@@ -15,7 +15,8 @@ class RoboticProgram(ttkb.Window):
         self.windowTitle.pack()
         
         palletizingRobot = ImageTk.PhotoImage(Image.open('robot.jpg'))
-        img_robot = tk.Label(image=palletizingRobot, width=50, height=50)
+        img_robot = tk.Label(image=palletizingRobot, width=100, height=100)
+        img_robot.dontloseit = palletizingRobot
         img_robot.pack()
         
         FKin = ttkb.Button(text = "Forward Kinematics", command = FkinWindow, bootstyle="primary")
