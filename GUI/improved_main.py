@@ -1,6 +1,8 @@
 import ttkbootstrap as ttkb
 from ttkbootstrap.constants import *
 from tkinter.font import nametofont
+import tkinter as tk
+from PIL import ImageTk, Image
 import numpy as np
 from roboticstoolbox import SerialLink, RevoluteDH, PrismaticDH
 
@@ -12,9 +14,9 @@ class RoboticProgram(ttkb.Window):
         self.windowTitle = ttkb.Label(text="Kinematic Analysis Calculator", font = 'Helvetica 18 bold')
         self.windowTitle.pack()
         
-        palletizingRobot = ttkb.PhotoImage(file="\img\\22248_contents4.gif", format="gif -index 2")
-        img_label = ttkb.Label(image=palletizingRobot)
-        img_label.pack()
+        palletizingRobot = ImageTk.PhotoImage(Image.open('robot.jpg'))
+        img_robot = tk.Label(image=palletizingRobot, width=50, height=50)
+        img_robot.pack()
         
         FKin = ttkb.Button(text = "Forward Kinematics", command = FkinWindow, bootstyle="primary")
         FKin.pack(pady=10)
