@@ -11,22 +11,28 @@ class RoboticProgram(ttkb.Window):
     def __init__(self):
         super().__init__()
         self.title("Kinematic Analysis")
-        self.windowTitle = ttkb.Label(text="Kinematic Analysis Calculator", font = 'Helvetica 18 bold')
-        self.windowTitle.pack()
+        self.geometry('1280x720')
+        self.resizable(width=False, height=False)
+        ML = ttkb.Labelframe(width=512, height=720, bootstyle='light')
+        ML.pack(side="left",fill="both", expand=True)
+        PL = ttkb.Labelframe(width=768, height=720, bootstyle='light')
+        PL.pack(side="left",fill="both", expand=True)
+        self.windowTitle = ttkb.Label(ML, text="Kinematic Analysis Calculator", font = 'Helvetica 18 bold')
+        self.windowTitle.pack(pady=20)
         
         palletizingRobot = ImageTk.PhotoImage(Image.open('robot.jpg'))
-        img_robot = tk.Label(image=palletizingRobot, width=100, height=100)
+        img_robot = tk.Label(PL, image=palletizingRobot)
         img_robot.dontloseit = palletizingRobot
-        img_robot.pack()
+        img_robot.pack(pady=100)
         
-        FKin = ttkb.Button(text = "Forward Kinematics", command = FkinWindow, bootstyle="primary")
-        FKin.pack(pady=10)
+        FKin = ttkb.Button(ML, text = "Forward Kinematics", command = FkinWindow, bootstyle="primary")
+        FKin.pack(pady=20)
         
-        IKin = ttkb.Button(text = "Inverse Kinematics", command= IkinWindow, bootstyle="primary")
-        IKin.pack(pady=10)
+        IKin = ttkb.Button(ML, text = "Inverse Kinematics", command= IkinWindow, bootstyle="primary")
+        IKin.pack(pady=20)
         
-        JBin = ttkb.Button(text = "Jacobian Matrix", command= Window, bootstyle="primary")
-        JBin.pack(pady=10)
+        JBin = ttkb.Button(ML, text = "Jacobian Matrix", command= Window, bootstyle="primary")
+        JBin.pack(pady=20)
         
         
 class Window(RoboticProgram):
@@ -284,7 +290,7 @@ class JBinWindow(Window):
         
 robot = RoboticProgram()
 robot.style.theme_use('simplex')
-robot.geometry('500x250')
+
 default_font = nametofont('TkDefaultFont')
 default_font.configure(family="Helvetica", size=12)
 robot.mainloop()
