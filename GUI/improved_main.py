@@ -9,8 +9,12 @@ class RoboticProgram(ttkb.Window):
     def __init__(self):
         super().__init__()
         self.title("Kinematic Analysis")
-        self.windowTitle = ttkb.Label(text="Kinematic Analysis Calculator")
+        self.windowTitle = ttkb.Label(text="Kinematic Analysis Calculator", font = 'Helvetica 18 bold')
         self.windowTitle.pack()
+        
+        palletizingRobot = ttkb.PhotoImage(file="\img\\22248_contents4.gif", format="gif -index 2")
+        img_label = ttkb.Label(image=palletizingRobot)
+        img_label.pack()
         
         FKin = ttkb.Button(text = "Forward Kinematics", command = FkinWindow, bootstyle="primary")
         FKin.pack(pady=10)
