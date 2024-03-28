@@ -16,7 +16,7 @@ import numpy as np
 #     theta = Joint Offset
 #     alpha = Link Twist
 #     r = Link Length
-#     d = Link Offset
+#     d = Link Offsetd
     
 def defineLinks():
     a1 = float(input("a_1 Link [mm]>>>"))
@@ -49,7 +49,10 @@ a1, a2, a3 = defineLinks()
 theta1, theta2, d3 = defineJoints()
 theta1 = convert_to_radians(theta1)
 theta2 = convert_to_radians(theta2)
-
+a1 = convert_to_meters(a1)
+a2 = convert_to_meters(a2)
+a3 = convert_to_meters(a3)
+d3 = convert_to_meters(d3)
 # Take Note: This is derived from the Denavit Hartenberg Parametric Table in columns of 
 # Theta, Alpha, R, and D
 
@@ -69,4 +72,4 @@ for i,j in htm.items():
     
 result = np.dot(np.dot(htm[0], htm[1]), htm[2])
 print("H0_3")
-print(np.round(result[0][3], 2))
+print(np.round(result, 2))

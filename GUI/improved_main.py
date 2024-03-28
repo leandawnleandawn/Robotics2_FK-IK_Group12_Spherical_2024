@@ -10,17 +10,18 @@ class RoboticProgram(ttkb.Window):
     
     def __init__(self):
         super().__init__()
+        
         self.title("Kinematic Analysis")
         self.geometry('1280x720')
         self.resizable(width=False, height=False)
         ML = ttkb.Labelframe(width=512, height=720, bootstyle='light')
         ML.pack(side="left",fill="both", expand=True)
-        PL = ttkb.Labelframe(width=768, height=720, bootstyle='light')
+        PL = ttkb.Canvas(width=768, height=720)
         PL.pack(side="left",fill="both", expand=True)
         self.windowTitle = ttkb.Label(ML, text="Kinematic Analysis Calculator", font = 'Helvetica 18 bold')
         self.windowTitle.pack(pady=20)
         
-        palletizingRobot = ImageTk.PhotoImage(Image.open('robot.jpg'))
+        palletizingRobot = ImageTk.PhotoImage(Image.open('robot.jpg').resize((800, 720)))
         img_robot = tk.Label(PL, image=palletizingRobot)
         img_robot.dontloseit = palletizingRobot
         img_robot.pack(pady=100)
@@ -38,8 +39,8 @@ class RoboticProgram(ttkb.Window):
 class Window(RoboticProgram):
     def __init__(self):
         self.windowTitle = ttkb.Toplevel(master = robot)
-        
-        LL = ttkb.Labelframe(master=self.windowTitle, text = "Link Length and Joint Variables")
+        self.windowTitle.geometry("500x500")
+        LL = ttkb.Labelframe(master=self.windowTitle, width=250, height=250,text = "Link Length and Joint Variables")
         LL.grid(row = 0, column = 0)
         
         a1L = ttkb.Label(LL, text = ("a1 = "))
@@ -66,7 +67,7 @@ class Window(RoboticProgram):
         self.a3data.grid(row=2,column=1)
         cm3.grid(row=2,column=2)
         
-        JV= ttkb.Labelframe(master=self.windowTitle, text = "Joint Variables")
+        JV= ttkb.Labelframe(master=self.windowTitle, width=250, height=250, text = "Joint Variables")
         JV.grid(row = 0, column = 1)
         
         t1L = ttkb.Label(JV, text = ("T1 = "))
@@ -93,7 +94,7 @@ class Window(RoboticProgram):
         self.d3data.grid(row=2, column=1)
         cm4.grid(row=2, column=2)
         
-        PV = ttkb.Labelframe(master=self.windowTitle, text = "Position Vector")
+        PV = ttkb.Labelframe(master=self.windowTitle, width=500, height=250, text = "Position Vector")
         PV.grid(row = 2, column = 0)
         
         XL = ttkb.Label(PV, text = ("X = "))
