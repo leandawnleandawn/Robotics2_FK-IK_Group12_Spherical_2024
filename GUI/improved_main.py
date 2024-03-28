@@ -23,7 +23,7 @@ class RoboticProgram(ttkb.Window):
         palletizingRobot = ImageTk.PhotoImage(Image.open('robot.jpg'))
         img_robot = tk.Label(PL, image=palletizingRobot)
         img_robot.dontloseit = palletizingRobot
-        img_robot.pack(pady=100)
+        img_robot.pack(fill="both")
         
         FKin = ttkb.Button(ML, text = "Forward Kinematics", command = FkinWindow, bootstyle="primary")
         FKin.pack(pady=20)
