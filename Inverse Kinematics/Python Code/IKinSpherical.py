@@ -6,7 +6,7 @@ def defineLinks():
     a3 = float(input("a_3 Link [mm]>>>"))
     return a1, a2, a3
 
-def defineJoints():
+def defineCoordinates():
     x_03 = float(input("x_03 >>>"))
     y_03 = float(input("y_03 >>>"))
     z_03 = float(input("z_03 >>>"))
@@ -30,7 +30,7 @@ def dhMatrix(theta, alpha, radius, distance):
     
 a1, a2, a3 = defineLinks()
 
-x_03, y_03, z_03 = defineJoints()
+x_03, y_03, z_03 = defineCoordinates()
 theta1, theta2, d3 = invKins(a1,x_03, y_03, z_03)
 
 print(f"The Joint Variables are t1: {theta1} t2: {theta2}, d3: {d3}")
