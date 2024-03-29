@@ -27,13 +27,13 @@ class RoboticProgram(ttkb.Window):
         img_robot.pack(fill="both")
         
         FKin = ttkb.Button(ML, text = "Forward Kinematics", command = FkinWindow, bootstyle="primary")
-        FKin.pack(pady=20)
+        FKin.pack(pady=20, padx = 10)
         
         IKin = ttkb.Button(ML, text = "Inverse Kinematics", command= IkinWindow, bootstyle="primary")
-        IKin.pack(pady=20)
+        IKin.pack(pady=20, padx = 10)
         
-        JBin = ttkb.Button(ML, text = "Jacobian Matrix", command= Window, bootstyle="primary")
-        JBin.pack(pady=20)
+        JBin = ttkb.Button(ML, text = "Jacobian Matrix", command= JBinWindow, bootstyle="primary")
+        JBin.pack(pady=20, padx = 10)
         
         
 class Window(RoboticProgram):
@@ -276,7 +276,7 @@ class IkinWindow(Window):
         return theta1, theta2, d3
 
 
-class JBinWindow(Window):
+class JBinWindow():
     def __init__(self):
         self.windowTitle = tk.Toplevel(master = robot)
         
