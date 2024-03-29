@@ -308,7 +308,6 @@ class IkinWindow(Window):
 class JBinWindow():
     def __init__(self):
         self.windowTitle = tk.Toplevel(master = robot)
-        
         underConstruction = ttkb.Label(self.windowTitle, text = "Hi! This Function is under construction and will be updated once Jacobian matrix is being discussed")
         underConstruction.pack()
 robot = RoboticProgram()
