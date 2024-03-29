@@ -149,9 +149,9 @@ class FkinWindow(Window):
         BF.place(x=125, y=250, relwidth=0.5, relheight=0.15)
         BF.columnconfigure((0,1), weight=1, uniform="a")
         BF.rowconfigure((0), weight=1, uniform="a")
-        forward = ttkb.Button(BF, text = "Foward", command=self.fkin)
+        forward = ttkb.Button(BF, text = "Foward", command=self.fkin, bootstyle="primary-outline")
         forward.grid(row=0, column=0)
-        reset = ttkb.Button(BF, text = "Reset", command=self.reset)
+        reset = ttkb.Button(BF, text = "Reset", command=self.reset, bootstyle="secondary-outline")
         reset.grid(row=0, column=1)
         
         self.robotTB(1,0.5,0.5,0,0,0)
@@ -234,9 +234,9 @@ class IkinWindow(Window):
         BF.place(x=125, y=250, relwidth=0.5, relheight=0.15)
         BF.columnconfigure((0,1), weight=1, uniform="a")
         BF.rowconfigure((0), weight=1, uniform="a")
-        inverse= ttkb.Button(BF, text = "Inverse", command=self.ikin)
+        inverse= ttkb.Button(BF, text = "Inverse", command=self.ikin, bootstyle="primary-outline")
         inverse.grid(row=0, column=0)
-        reset = ttkb.Button(BF, text = "Reset", command=self.reset)
+        reset = ttkb.Button(BF, text = "Reset", command=self.reset, bootstyle="secondary-outline")
         reset.grid(row=0, column=1)
         
     def ikin(self):
