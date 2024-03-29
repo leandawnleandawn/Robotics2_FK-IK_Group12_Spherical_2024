@@ -147,13 +147,14 @@ class FkinWindow(Window):
         
         BF = ttkb.Labelframe(master=self.windowTitle)
         BF.place(x=125, y=250, relwidth=0.5, relheight=0.15)
-        BF.columnconfigure((0,1), weight=1, uniform="a")
+        BF.columnconfigure((0,1,2), weight=1, uniform="a")
         BF.rowconfigure((0), weight=1, uniform="a")
         forward = ttkb.Button(BF, text = "Foward", command=self.fkin, bootstyle="primary-outline")
         forward.grid(row=0, column=0)
         reset = ttkb.Button(BF, text = "Reset", command=self.reset, bootstyle="secondary-outline")
         reset.grid(row=0, column=1)
-        
+        htm = ttkb.Button(BF, text = "Table", command=self.showTable, bootstyle="secondary")
+        htm.grid(row=0, column=2)
         self.robotTB(1,0.5,0.5,0,0,0)
           
     def fkin(self):
@@ -220,6 +221,17 @@ class FkinWindow(Window):
         sphericalManipulator = SerialLink([H01, H12, H23])
         sphericalManipulator.plot([t1, t2, d3])
 
+    def showTable(self):
+        showCanvas = ttkb.Toplevel(self.windowTitle)
+        showCanvas.title("Denavit Hartenberg Computation of Spherical Manipulator")
+        dhTable = ttkb.Canvas(master=showCanvas)
+        dhTable.pack()
+
+        denavithartenberg = ImageTk.PhotoImage(Image.open('Fkin.png').resize((500,500)))
+        img_robot = tk.Label(dhTable, image=denavithartenberg)
+        img_robot.dontloseit = denavithartenberg
+        img_robot.pack(fill="both")
+
 class IkinWindow(Window):
     def __init__(self):
         super().__init__()
@@ -232,12 +244,14 @@ class IkinWindow(Window):
         
         BF = ttkb.Labelframe(master=self.windowTitle)
         BF.place(x=125, y=250, relwidth=0.5, relheight=0.15)
-        BF.columnconfigure((0,1), weight=1, uniform="a")
+        BF.columnconfigure((0,1,2), weight=1, uniform="a")
         BF.rowconfigure((0), weight=1, uniform="a")
         inverse= ttkb.Button(BF, text = "Inverse", command=self.ikin, bootstyle="primary-outline")
         inverse.grid(row=0, column=0)
         reset = ttkb.Button(BF, text = "Reset", command=self.reset, bootstyle="secondary-outline")
         reset.grid(row=0, column=1)
+        soln = ttkb.Button(BF, text = "Solution", command=self.showSoln, bootstyle="secondary")
+        soln.grid(row=0, column=2)
         
     def ikin(self):
         self.T1data.config(state= ttkb.NORMAL)
@@ -279,7 +293,17 @@ class IkinWindow(Window):
         theta2 = np.arctan(s/r) * 180/np.pi
         d3 = (np.sqrt((r**2) + (s**2)) - a2 - a3) * 100
         return theta1, theta2, d3
+    
+    def showSoln(self):
+        showCanvas = ttkb.Toplevel(self.windowTitle)
+        showCanvas.title("Inverse Kinematics Graphical Solution")
+        dhTable = ttkb.Canvas(master=showCanvas)
+        dhTable.pack()
 
+        denavithartenberg = ImageTk.PhotoImage(Image.open('Ikin.png').resize((500,500)))
+        img_robot = tk.Label(dhTable, image=denavithartenberg)
+        img_robot.dontloseit = denavithartenberg
+        img_robot.pack(fill="both")
 
 class JBinWindow():
     def __init__(self):
