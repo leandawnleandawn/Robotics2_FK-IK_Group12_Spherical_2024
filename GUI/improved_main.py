@@ -15,13 +15,13 @@ class RoboticProgram(ttkb.Window):
         self.geometry('1280x720')
         self.resizable(width=False, height=False)
         ML = ttkb.Labelframe(width=512, height=720, bootstyle='light')
-        ML.pack(side="left",fill="both", expand=True)
+        ML.place(x = 75, y = 150)
         PL = ttkb.Canvas(width=768, height=720)
-        PL.pack(side="left",fill="both", expand=True)
+        PL.place(x = 512, y = 0)
         self.windowTitle = ttkb.Label(ML, text="Kinematic Analysis Calculator", font = 'Helvetica 18 bold')
         self.windowTitle.pack(pady=20)
         
-        palletizingRobot = ImageTk.PhotoImage(Image.open('robot.jpg').resize((800, 720)))
+        palletizingRobot = ImageTk.PhotoImage(Image.open('robot.jpg').resize((1280, 720)))
         img_robot = tk.Label(PL, image=palletizingRobot)
         img_robot.dontloseit = palletizingRobot
         img_robot.pack(fill="both")
