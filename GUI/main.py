@@ -16,7 +16,7 @@ class RoboticProgram(tk.Tk):
         IKin = tk.Button(text = "Inverse Kinematics", command= IkinWindow)
         IKin.pack()
         
-        JBin = tk.Button(text = "Jacobian Matrix", command= Window)
+        JBin = tk.Button(text = "Jacobian Matrix", command= JBinWindow)
         JBin.pack()
         
         
