@@ -262,16 +262,7 @@ class IkinWindow(Window):
 
 class JBinWindow(Window):
     def __init__(self):
-        super().__init__()
-        self.windowTitle.title("Jacobian Kinematics")
-        
-        BF = tk.LabelFrame(master=self.windowTitle, font=(5))
-        BF.grid(row=1, column=0)
-        
-        jacobian= tk.Button(BF, text = "Jacobian")
-        jacobian.grid(row=0, column=0)
-        reset = tk.Button(BF, text = "Reset")
-        reset.grid(row=0, column=1)
+        self.windowTitle = tk.Toplevel(master = robot)
         
 robot = RoboticProgram()
 robot.mainloop()
