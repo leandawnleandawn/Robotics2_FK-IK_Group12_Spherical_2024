@@ -40,8 +40,8 @@ class Window(RoboticProgram):
     def __init__(self):
         self.windowTitle = ttkb.Toplevel(master = robot)
         self.windowTitle.geometry("500x500")
-        LL = ttkb.Labelframe(master=self.windowTitle, width=250, height=250,text = "Link Length and Joint Variables")
-        LL.grid(row = 0, column = 0)
+        LL = ttkb.Labelframe(master=self.windowTitle, width=250, height=250, text = "Link Length and Joint Variables")
+        LL.grid(row = 0, column = 0, sticky="ew", padx=10, pady=10)
         
         a1L = ttkb.Label(LL, text = ("a1 = "))
         self.a1data = ttkb.Entry(LL,width=5)
@@ -68,7 +68,7 @@ class Window(RoboticProgram):
         cm3.grid(row=2,column=2)
         
         JV= ttkb.Labelframe(master=self.windowTitle, width=250, height=250, text = "Joint Variables")
-        JV.grid(row = 0, column = 1)
+        JV.grid(row = 0, column = 1, sticky="ew", padx=10, pady=10)
         
         t1L = ttkb.Label(JV, text = ("T1 = "))
         self.T1data = ttkb.Entry(JV,width=5)
@@ -95,7 +95,7 @@ class Window(RoboticProgram):
         cm4.grid(row=2, column=2)
         
         PV = ttkb.Labelframe(master=self.windowTitle, width=500, height=250, text = "Position Vector")
-        PV.grid(row = 2, column = 0)
+        PV.grid(row = 2, column = 0, sticky="ew", padx=10, pady=10)
         
         XL = ttkb.Label(PV, text = ("X = "))
         self.Xdata = ttkb.Entry(PV,width=5)
@@ -143,7 +143,7 @@ class FkinWindow(Window):
         self.windowTitle.title("Foward Kinematics")
         
         BF = ttkb.Labelframe(master=self.windowTitle)
-        BF.grid(row=1, column=0)
+        BF.grid(row=1, column=0, sticky="ew")
         
         forward = ttkb.Button(BF, text = "Foward", command=self.fkin)
         forward.grid(row=0, column=0)

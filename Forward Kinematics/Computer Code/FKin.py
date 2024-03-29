@@ -16,7 +16,7 @@ import numpy as np
 #     theta = Joint Offset
 #     alpha = Link Twist
 #     r = Link Length
-#     d = Link Offsetd
+#     d = Link Offset
     
 def defineLinks():
     a1 = float(input("a_1 Link [mm]>>>"))
