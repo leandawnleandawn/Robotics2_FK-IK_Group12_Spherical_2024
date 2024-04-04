@@ -1,5 +1,5 @@
 # Robotics 2 Midterm Project: Forward and Inverse Kinematics Grpahical User Interface of a Spherical Manipulator
-#### Take note
+#### Take note if the pictures are cannot be accessed, [click here](https://www.youtube.com/playlist?list=PLhWn3nOiDEfsU8u1udOJn3WJYmZ6HJU1k)
 ## Abstract:
   In this Industry 4.0, one must be expert on knowing the design, control, and planning the following
   Industrial Robots to make efficient and productive manufacturing processses in the Semiconductor, Logistics
