@@ -1,4 +1,4 @@
-# Robotics 2 Laboratory 1: Forward and Inverse Kinematics of a Spherical Manipulator
+# Robotics 2 Midterm Project: Forward and Inverse Kinematics Grpahical User Interface of a Spherical Manipulator
 
 ## Abstract:
   In this Industry 4.0, one must be expert on knowing the design, control, and planning the following
@@ -8,8 +8,23 @@
   operators and technician controlling the Industrial Robot. 
 ## Introduction:
 
-  Robotics Design is one of the difficult tasks Engineers must done to create autonomous system across the 
+  The challenges of robotics design are indeed formidable to engineers, especially those in mechatronics 
+  and related fields who have an aim of creating autonomous systems for various uses notably in manufacturing 
+  (Almurib et al., 2011). Nonetheless, Balestrino (1984) showed that it was not easy to control robots given 
+  some roadblocks such as non-linearities, parametrizations and inaccuracies. 
+
+  A major landmark in robotics was the work done by Victor Shiemann at Stanford University with the creation 
+  of the Stanford Arm in 1969 (Moran, 2007). Originally meant for educational purposes, its configuration as 
+  a spherical manipulator with three primary movements explains why it is considered a pioneering model. 
+
+  In response to practical difficulties associated with manipulation of such systems, This paper presents 
+  a project on developing a graphical user interface (GUI) for a spherical mechanical manipulator. 
+  The objective of this interface is to facilitate calibration and control procedures so as to improve 
+  efficiency and accuracy while using robotic manipulation. 
+  
 ## Degrees of Freedom of the Spherical Mechanical Manipulator:
+
+
 
 ## Kinematic Diagram and DH-Frame Assignments of Spherical Mechanical Manipulator
 
