@@ -65,6 +65,7 @@ The First Step on finding the Forward Kinematics of the System is by assigning t
 </ol>
 
 The Following Video shows how this Spherical Manipulator gets assigned its own frames.
+
 ## Denavit-Hartenberg Parametric Table of Spherical Mechanical Manipulator
 Video:
 [![Denavit-Hartenberg Parametric Table](https://i.ytimg.com/vi/AdVCETLDfT8/maxresdefault.jpg)](https://youtu.be/AdVCETLDfT8)
@@ -92,17 +93,25 @@ Which has the following notation:
 </ul>
 
 The Video above shows how can we find the DH Parameters of a Spherical Manipulator.
-
 ![421668234_403017508989038_658074442315959319_n](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/157699815/008f5e5c-eb10-42e5-ae67-f461739e19a0)
 
 ## Homogenous Transformation Matrix of Spherical Mechanical Manipulator
 Video:
 
+From the original definition of the Homogenous Transformation Matrix under the Denavit Hartenberg Convention, the set of parameters can be subsitute
+in this matrix:
 
+![image](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/83767299/4badcfc0-a7f2-469d-aea8-d40275d1b1e9)
+
+In this Video the following parameters are beiing subsituted on the video itself.
+
+$$$$
 ## Inverse Kinematics of Spherical Mechanical Manipulator
 Video:
 [![Denavit-Hartenberg Parametric Table](https://i.ytimg.com/vi/VUPBvH8MFUk/maxresdefault.jpg)](https://youtu.be/VUPBvH8MFUk)
 
+While the Forward Kinematics focuses on finding the coordinates of the systems based on its end effectors. The Inverse Kinematics, verbosely, does the oppposite.
+Reminder that 
 ![421995649_1149281762738087_6404656819298399393_n](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/157699815/811c303b-9367-422e-a1a8-efcbe1089e5e)
 
 ## Forward and Inverse Kinematics Graphical User Interface (GUI) Calculator of Spherical Manipulator:
