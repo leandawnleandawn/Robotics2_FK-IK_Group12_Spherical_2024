@@ -17,84 +17,97 @@
   of the Stanford Arm in 1969 (Moran, 2007). Originally meant for educational purposes, its configuration as 
   a spherical manipulator with three primary movements explains why it is considered a pioneering model. 
 
-  In response to practical difficulties associated with manipulation of such systems, This paper presents 
+  In response to practical difficulties associated with manipulation of such systems, This repository presents 
   a project on developing a graphical user interface (GUI) for a spherical mechanical manipulator. 
   The objective of this interface is to facilitate calibration and control procedures so as to improve 
   efficiency and accuracy while using robotic manipulation. 
-  
+
+# TAKE NOTE: CLICK THE FOLLOWING IMAGE TO WATCH THE FOLLOWING VIDEO. MOST OF THE VIDEO FILES EXCEEDED GITHUB'S UPLOAD SIZE.
+
 ## Degrees of Freedom of the Spherical Mechanical Manipulator:
 
-[![aDegrees of Freedom](https://i.ytimg.com/vi/J21eMrKu4F8/maxresdefault.jpg)](https://youtu.be/J21eMrKu4F8)
+Video:
+[![Degrees of Freedom](https://i.ytimg.com/vi/J21eMrKu4F8/maxresdefault.jpg)](https://youtu.be/J21eMrKu4F8)
 
+Degrees of Freedom is defined as the number of the independent variables moving in a given system. Reminder that the Degrees
+of Freedom is different based on what field is under with. In the subject of Robotics, it is the independent numbers of joints
+that are independently moving in a given robotic system. 
 
+We can usually classify it by the following joints (reference to Lynch and Park (2017)):
+
+![image](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/83767299/918d7f1e-3161-4ae2-b9a7-545ca3b511f5)
+
+We have Revolute, Prismatic and Helical Joint moving in one independent axis, while more complex joints such as Cylindrical and Unverisal having 
+two independent motion, and Spherical 3 independent motions. These "Indepedent Motion" are what we call as "Degrees of Freedom". It is necessary
+to find the DOF of the Manipulator as if it describes the mobility and verstality of the robot under certain environment conditions.
+
+Grubler's Criterion is of the famous formula on finding the number of DOF of the given manipulator:
+
+$$M = 6n - \Sigma^{m}_{i=1}(6-C_i)$$
+
+Where $M$ is the Mobility of the System, $n$ is the number of links and $m$ is the number of joints. $C_i$ is the connectivity of the given joint itself.
+The video explains how do we get the Degrees of Freedom of the System using the Grublers Formula.
 
 ## Kinematic Diagram and DH-Frame Assignments of Spherical Mechanical Manipulator
-
+Video:
 [![Kinematic Diagram](https://i.ytimg.com/vi/7ie01cTN80Y/maxresdefault.jpg)](https://youtu.be/7ie01cTN80Y)
 
-## Denavit-Hartenberg Parametric Table of Spherical Mechanical Manipulator
+The First Step on finding the Forward Kinematics of the System is by assigning the Frame of the following manipulator. We have 4 basic rules to follow for that:
 
-[![Denavit-Hartenberg Parametric Table](https://i.ytimg.com/vi/AdVCETLDfT8/maxresdefault.jpg)](https://youtu.be/AdVCETLDfT8)
-
-  Jacques Denavit and Richard Hartenberg created a standardized set of parameters to be able to shorthand the computation of the spatial linkages
-  These are known to be as the Denavit Hartenberg Notation:
-
-  This is noted by the following steps:
- <ol>
-  <li>Assigning the Joint Variables and Links of the Mechanical Manipulator ($\theta_{n}$ for Revolute, $d_{n}$ for prismatic joint, $a_{n}$ for links)</li>
-   <li><ul>Assigning the Framees of the Mechanical Manipulator
-       <li>Define the $z_n$ as the axis of rotation of the revolute joint of the line of translation of prismatic joint</li>
-       <li>Define the $x_n$ as orthogonal to $z_n$ and $z_{n-1}$</li>
-       <li>The $x_n$ must be perpendicular to $z_{n-1}$, if not, it must be rotated across $z_n$ or translated across $z_n$</li>
-       <li>$y_n$ is followed via Right Hand Rule </li>
-   </ul></li>
-   <li><ul> Assigning the following DH Parameters 
-     <li>$/theta$ is the rotation of the frame n-1 across $z_{n-1}$ to match from $x_n$ to $x_{n-1}$, plus the joint variable $/theta_n$ if it has revolute joint. This is known as the Joint Angle</li>
-     <li>$/alpha$ is the rotation of the frame n-1 across $x_{n}$ to match from $z_n$ to $z_{n-1}$, This is known as the Twist Angle.</li>
-     <li>$r$ is the distance between frame n-1 and n across $x_n$. This is known as the Joint Offset </li>
-     <li>$d$ is the distance between frame n-1 and n across $z_{n-1}$, plus the joint variable $d_n$ if it has a prismatic joint. This is known as the Link Length (Do not confuse with Link Length of the Mechanical Manipulator)</li>
-   </ul></li>
-   <li> Creating the following DH Homogenous Transformation Matrix defined as 
-   $$\begin{bmatrix}
-   cos(\theta_{n}) & -sin(\theta_{n})*cos(\alpha_{n}) & sin(\theta_{n})*sin(\alpha_{n}) & r_{n}*cos(\theta_{n}) \\
-   sin(\theta_{n}) & cos(\theta_{n})*cos(\alpha_{n}) & -cos(\theta_{n})*sin(\alpha_{n}) & r_{n}*sin(\theta_{n}) \\
-   0 & sin(\alpha_{n}) & cos(\alpha_{n}) & d_{n} \\
-   0 & 0 & 0 & 1
-   \end{bmatrix}$$
-   </li>
-   <li> Getting the Dot Product of all Homogenous Transformation Matrix together </li>
+<ol>
+  <li>Assign the following Link Lengths and Joint Variables. $a_n$ is the convention for link length. $\Theta_n$ is for the Revolute joint. and $d$ is for the Prismatic Joint.</li>
+  <li>$z_n$ must be the axis of rotation (if it is a revolute joint) or line of translation (if it is a prismatic joint).</li>
+  <li>$x_n$ must be orthogonal to the $z_n$ and $z_{n-1}$</li>
+  <li>For checking, $x_n$ must be intersect with $z_{n-1}$. If it wasn't<ul>
+    <li>First, Rotate the current frame to match both axes.</li>
+    <li>Last, Translate the current frame to its previous frame.</li>
+  </ul></li>
 </ol>
 
+The Following Video shows how this Spherical Manipulator gets assigned its own frames.
+## Denavit-Hartenberg Parametric Table of Spherical Mechanical Manipulator
+Video:
+[![Denavit-Hartenberg Parametric Table](https://i.ytimg.com/vi/AdVCETLDfT8/maxresdefault.jpg)](https://youtu.be/AdVCETLDfT8)
+
+The Second step on finding the Forward Kinematics of the Given Manipulator is to find the Homogenous Transformation Matrix
+of the given system. HTM is mathematically defined as the following:
+
+![image](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/83767299/4b47744e-e6ee-484a-8960-ab094259ce2e)
+
+Where $R$ and $d$ are Rotation Matrix and Displacment Vector concatenate together into a single matrix. This defines the following.
+To get more in-depth into the HTM, [you can watch it here](https://www.youtube.com/watch?v=4Y1_y9DI_Hw). To get things short, we can use the 
+Denavit Hartenberg Convention of Finding the HTM of a Manipulator.
+
+The Origin of the Denvait Hartenberg Parameters is baseed on the two frame assumptions - Rule Number 2 and Rule Number 3. In this case, we 
+can generalize the Homogenous Transformation Matrix as described in Spong (2005):
+
+$$A = Rot_{z,\Theta}Trans_{z,d}Rot_{x,\alpha}Trans_{x,\alpha}$$
+
+Which has the following notation:
+<ul>
+  <li>$r$ (in other textbooks, this is $a$) is the link length. This describes the distance of the two frames across $x_n$</li>
+  <li>$\alpha$ is the link twist. This describes the rotation of the $x_n$ to match $z_{n-1}$ to $z_n$</li>
+  <li>$d$ is the link offset. This describes the distance of the two frames across $z_{n-1}$</li>
+  <li>$\Theta$ is the joint angle. This describes the rotation of the $z_{n-1}$ to match $x_{n-1}$ to $x_n$</li>
+</ul>
+
+The Video above shows how can we find the DH Parameters of a Spherical Manipulator.
+
+![421668234_403017508989038_658074442315959319_n](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/157699815/008f5e5c-eb10-42e5-ae67-f461739e19a0)
+
 ## Homogenous Transformation Matrix of Spherical Mechanical Manipulator
+Video:
+
 
 ## Inverse Kinematics of Spherical Mechanical Manipulator
-
+Video:
 [![Denavit-Hartenberg Parametric Table](https://i.ytimg.com/vi/VUPBvH8MFUk/maxresdefault.jpg)](https://youtu.be/VUPBvH8MFUk)
 
-If the following Forward Kinematics focuses on the joint variables to find the position vector. The following Inverse Kinematics is the opposite, where we find the joint variables of the system via the use of position vector.
- The most effective method of solving the Inverse Kinematics is Numerical Methods, however this is accurate however this is compicated to compute. Graphical Method is the best method of solving Serial Manipulators, however, One must consider the implications of having
- a undefined Solutions. 
-#### Inverse Kinematics Graphical Method
- When solving the Inverse Kinematics of the Serial manipulator, we are using the foundations of Trignometry. The following approaches are the following:
- <ul>
-  <li>Trigonometric Ratios</li>
-  <li>Law of Cosines</li>
-  <li>Pythagorean Theorem</li>
- </ul>
-
-## Procedure Inverse Kinematics:
-<ol>
-<li>Derive the Spherical Manipulator inverse kinematics solution using graphical method.</li>
-<li>Program the Inverse Kinematics in Python.</li>
-<li>Perform the experimentation of comparing the position vector and joint variables from the Python program to the MATLAB program.</li>
-<li><ol>Provide the following as output of the experiment:
-<li>Written derivation of the inverse kinematics using graphical method.</li>
-<li>Python Code</li>
-<li>5 trials in table for the comparison of Inverse Kinematics in MATLAB and Python</li>
-</ol></li>
+![421995649_1149281762738087_6404656819298399393_n](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/157699815/811c303b-9367-422e-a1a8-efcbe1089e5e)
 
 ## Forward and Inverse Kinematics Graphical User Interface (GUI) Calculator of Spherical Manipulator:
-
+Video:
+[![Denavit-Hartenberg Parametric Table](https://i.ytimg.com/vi/ImiuId-Wszk/maxresdefault.jpg)](https://youtu.be/ImiuId-Wszk)
 ## References
  Moran, M. E. (2007). Evolution of robotic arms. Journal of Robotic Surgery, 1(2), 103–111. https://doi.org/10.1007/s11701-006-0002-x
  
@@ -105,20 +118,11 @@ If the following Forward Kinematics focuses on the joint variables to find the p
  Spong, M. W., Hutchinson, S., & Vidyasagar, M. (2005). Robot modeling and control. John Wiley & Sons.
  
 ## D-H Parametric table of Spherical Manipulator
-</ol>
-
-![421668234_403017508989038_658074442315959319_n](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/157699815/008f5e5c-eb10-42e5-ae67-f461739e19a0)
-
- 
-</ol>
 
 ## Inverse Kinematics of Spherical Manipulator
-<ol>
- 
-![421995649_1149281762738087_6404656819298399393_n](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/157699815/811c303b-9367-422e-a1a8-efcbe1089e5e)
 
-</ol>
- 
+
+
 ## Proponents:
 
  Dianne Mae Ortega
