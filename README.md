@@ -24,16 +24,18 @@
   
 ## Degrees of Freedom of the Spherical Mechanical Manipulator:
 
-
-https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/83767299/e73c1138-6d12-4a31-9a82-a9ad3caff9c9
+[![aDegrees of Freedom](https://i.ytimg.com/vi/J21eMrKu4F8/maxresdefault.jpg)](https://youtu.be/J21eMrKu4F8)
 
 
 
 ## Kinematic Diagram and DH-Frame Assignments of Spherical Mechanical Manipulator
 
-
+[![Kinematic Diagram](https://i.ytimg.com/vi/7ie01cTN80Y/maxresdefault.jpg)](https://youtu.be/7ie01cTN80Y)
 
 ## Denavit-Hartenberg Parametric Table of Spherical Mechanical Manipulator
+
+[![Denavit-Hartenberg Parametric Table](https://i.ytimg.com/vi/AdVCETLDfT8/maxresdefault.jpg)](https://youtu.be/AdVCETLDfT8)
+
   Jacques Denavit and Richard Hartenberg created a standardized set of parameters to be able to shorthand the computation of the spatial linkages
   These are known to be as the Denavit Hartenberg Notation:
 
@@ -66,6 +68,9 @@ https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/asset
 ## Homogenous Transformation Matrix of Spherical Mechanical Manipulator
 
 ## Inverse Kinematics of Spherical Mechanical Manipulator
+
+[![Denavit-Hartenberg Parametric Table](https://i.ytimg.com/vi/VUPBvH8MFUk/maxresdefault.jpg)](https://youtu.be/VUPBvH8MFUk)
+
 If the following Forward Kinematics focuses on the joint variables to find the position vector. The following Inverse Kinematics is the opposite, where we find the joint variables of the system via the use of position vector.
  The most effective method of solving the Inverse Kinematics is Numerical Methods, however this is accurate however this is compicated to compute. Graphical Method is the best method of solving Serial Manipulators, however, One must consider the implications of having
  a undefined Solutions. 
