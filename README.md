@@ -25,8 +25,13 @@
 ## Degrees of Freedom of the Spherical Mechanical Manipulator:
 
 
+https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/83767299/e73c1138-6d12-4a31-9a82-a9ad3caff9c9
+
+
 
 ## Kinematic Diagram and DH-Frame Assignments of Spherical Mechanical Manipulator
+
+
 
 ## Denavit-Hartenberg Parametric Table of Spherical Mechanical Manipulator
   Jacques Denavit and Richard Hartenberg created a standardized set of parameters to be able to shorthand the computation of the spatial linkages
@@ -86,6 +91,13 @@ If the following Forward Kinematics focuses on the joint variables to find the p
 ## Forward and Inverse Kinematics Graphical User Interface (GUI) Calculator of Spherical Manipulator:
 
 ## References
+ Moran, M. E. (2007). Evolution of robotic arms. Journal of Robotic Surgery, 1(2), 103–111. https://doi.org/10.1007/s11701-006-0002-x
+ 
+ Balestrino, A., De Maria, G., & Sciavicco, L. (1984). Robust control of robotic manipulators. IFAC Proceedings Volumes, 17(2), 2435–2440. https://doi.org/10.1016/s1474-6670(17)61347-8
+ 
+ Almurib, H. a. F., Al-Qrimli, H. F. A., & Kumar, N. (2012). A review of Application Industrial Robotic Design. Ninth International Conference on ICT and Knowledge Engineering. https://doi.org/10.1109/ictke.2012.6152387
+
+ Spong, M. W., Hutchinson, S., & Vidyasagar, M. (2005). Robot modeling and control. John Wiley & Sons.
  
 ## D-H Parametric table of Spherical Manipulator
 </ol>
