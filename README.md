@@ -1,9 +1,14 @@
 # Robotics 2 Laboratory 1: Forward and Inverse Kinematics of a Spherical Manipulator
 
 ## Abstract:
-
+  In this Industry 4.0, one must be expert on knowing the design, control, and planning the following
+  Industrial Robots to make efficient and productive manufacturing processses in the Semiconductor, Logistics
+  and other Fields. One must know the difficulty of integrating the different fields on creating such mechanical
+  manipulator. In this repository, the members of the Company created a Graphical User Interface to give ease to
+  operators and technician controlling the Industrial Robot. 
 ## Introduction:
 
+  Robotics Design is one of the difficult tasks Engineers must done to create autonomous system across the 
 ## Degrees of Freedom of the Spherical Mechanical Manipulator:
 
 ## Kinematic Diagram and DH-Frame Assignments of Spherical Mechanical Manipulator
