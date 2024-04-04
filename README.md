@@ -1,5 +1,5 @@
 # Robotics 2 Midterm Project: Forward and Inverse Kinematics Grpahical User Interface of a Spherical Manipulator
-
+#### Take note
 ## Abstract:
   In this Industry 4.0, one must be expert on knowing the design, control, and planning the following
   Industrial Robots to make efficient and productive manufacturing processses in the Semiconductor, Logistics
@@ -26,7 +26,7 @@
 
 ## Degrees of Freedom of the Spherical Mechanical Manipulator:
 
-Video:
+Video (Please Click the Image Below):
 [![Degrees of Freedom](https://i.ytimg.com/vi/J21eMrKu4F8/maxresdefault.jpg)](https://youtu.be/J21eMrKu4F8)
 
 Degrees of Freedom is defined as the number of the independent variables moving in a given system. Reminder that the Degrees
@@ -49,7 +49,7 @@ Where $M$ is the Mobility of the System, $n$ is the number of links and $m$ is t
 The video explains how do we get the Degrees of Freedom of the System using the Grublers Formula.
 
 ## Kinematic Diagram and DH-Frame Assignments of Spherical Mechanical Manipulator
-Video:
+Video (Please Click the Image Below):
 [![Kinematic Diagram](https://i.ytimg.com/vi/7ie01cTN80Y/maxresdefault.jpg)](https://youtu.be/7ie01cTN80Y)
 
 The First Step on finding the Forward Kinematics of the System is by assigning the Frame of the following manipulator. We have 4 basic rules to follow for that:
@@ -67,7 +67,7 @@ The First Step on finding the Forward Kinematics of the System is by assigning t
 The Following Video shows how this Spherical Manipulator gets assigned its own frames.
 
 ## Denavit-Hartenberg Parametric Table of Spherical Mechanical Manipulator
-Video:
+Video (Please Click the Image Below):
 [![Denavit-Hartenberg Parametric Table](https://i.ytimg.com/vi/AdVCETLDfT8/maxresdefault.jpg)](https://youtu.be/AdVCETLDfT8)
 
 The Second step on finding the Forward Kinematics of the Given Manipulator is to find the Homogenous Transformation Matrix
@@ -93,11 +93,13 @@ Which has the following notation:
 </ul>
 
 The Video above shows how can we find the DH Parameters of a Spherical Manipulator.
+
+The Image below shows the Frame Assignement and the DH Parameters of the Spherical Manipulator.
 ![421668234_403017508989038_658074442315959319_n](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/157699815/008f5e5c-eb10-42e5-ae67-f461739e19a0)
 
 ## Homogenous Transformation Matrix of Spherical Mechanical Manipulator
 Video:
-
+[![HTM](https://i.ytimg.com/vi/a2cQWwoLQ5U/maxresdefault.jpg)](https://youtu.be/a2cQWwoLQ5U)
 From the original definition of the Homogenous Transformation Matrix under the Denavit Hartenberg Convention, the set of parameters can be subsitute
 in this matrix:
 
@@ -105,19 +107,29 @@ in this matrix:
 
 In this Video the following parameters are beiing subsituted on the video itself.
 
-$$$$
 ## Inverse Kinematics of Spherical Mechanical Manipulator
-Video:
-[![Denavit-Hartenberg Parametric Table](https://i.ytimg.com/vi/VUPBvH8MFUk/maxresdefault.jpg)](https://youtu.be/VUPBvH8MFUk)
+Video (Please Click the Image Below):
+[![IKinGraphical](https://i.ytimg.com/vi/VUPBvH8MFUk/maxresdefault.jpg)](https://youtu.be/VUPBvH8MFUk)
 
 While the Forward Kinematics focuses on finding the coordinates of the systems based on its end effectors. The Inverse Kinematics, verbosely, does the oppposite.
-Reminder that 
+If the Forward Kinematics is mainly purpose is to simulate a mechanical manipulator. The Inverse Kinematics invovles the control and manipulation of the end effector
+and outputs the certain joint angles to move so. There are two different methods on solving Inverse Kinematics (1) Numerical Solution which involves Euler's Method,
+and (2) Grapphcial Solution which uses Trigonometry on solving these videos.
+
+The Video shows how can you solve the Inverse Kinematics Problem using the Graphical Method.
+
+The Image below shows the computation of the Spherical Manipulator Inverse Kinematics via Graphical Method. 
 ![421995649_1149281762738087_6404656819298399393_n](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/157699815/811c303b-9367-422e-a1a8-efcbe1089e5e)
 
 ## Forward and Inverse Kinematics Graphical User Interface (GUI) Calculator of Spherical Manipulator:
-Video:
-[![Denavit-Hartenberg Parametric Table](https://i.ytimg.com/vi/ImiuId-Wszk/maxresdefault.jpg)](https://youtu.be/ImiuId-Wszk)
-## References
+Video (Please Click the Image Below):
+[![Programming](https://i.ytimg.com/vi/ImiuId-Wszk/maxresdefault.jpg)](https://youtu.be/ImiuId-Wszk)
+
+This video is explained by the programmer is to explain comprehensively how the Forward Kinematics, Inverse Kinematics, the Model created via Robotics Toolbox and the GUI using TKinter and TTKBootstrap.
+
+
+## References:
+
  Moran, M. E. (2007). Evolution of robotic arms. Journal of Robotic Surgery, 1(2), 103–111. https://doi.org/10.1007/s11701-006-0002-x
  
  Balestrino, A., De Maria, G., & Sciavicco, L. (1984). Robust control of robotic manipulators. IFAC Proceedings Volumes, 17(2), 2435–2440. https://doi.org/10.1016/s1474-6670(17)61347-8
@@ -125,19 +137,15 @@ Video:
  Almurib, H. a. F., Al-Qrimli, H. F. A., & Kumar, N. (2012). A review of Application Industrial Robotic Design. Ninth International Conference on ICT and Knowledge Engineering. https://doi.org/10.1109/ictke.2012.6152387
 
  Spong, M. W., Hutchinson, S., & Vidyasagar, M. (2005). Robot modeling and control. John Wiley & Sons.
+
+ Lynch, K. M., & Park, F. C. (2017). Modern robotics. Cambridge University Press.
  
-## D-H Parametric table of Spherical Manipulator
-
-## Inverse Kinematics of Spherical Manipulator
-
-
-
 ## Proponents:
 
- Dianne Mae Ortega
+ Project Leader and Project Engineer:  Dianne Mae Ortega
  
- Ivan Russ Oxillo
+ Project Supervisor:  Ivan Russ Oxillo
  
- Jancen Mendoza
+ Project QA:  Jancen Mendoza
  
- Lyndon Allen Sales
+ Programmer:  Lyndon Allen Sales
