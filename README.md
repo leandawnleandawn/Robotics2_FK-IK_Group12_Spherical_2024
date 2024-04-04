@@ -1,35 +1,14 @@
 # Robotics 2 Laboratory 1: Forward and Inverse Kinematics of a Spherical Manipulator
-## Proponents:
 
- Dianne Mae Ortega
- 
- Ivan Russ Oxillo
- 
- Jancen Mendoza
- 
- Lyndon Allen Sales
+## Abstract:
 
- ## Objectives:
-   To clearly perform the Forward and Inverse Kinematics of the Spherical Manipulator
+## Introduction:
 
-## Theory:
-  When dealing with Mechanical Manipulators (Arm-Type Robots/ Leg-Type Robots), the main objective of the Robotics Engineer is to 
-  design the following robot with its dinstinctive joints and the position on the following space. One method to know about that is
-  the use of **Forward and Inverse Kinemtics** 
+## Degrees of Freedom of the Spherical Mechanical Manipulator:
 
-### Forward Kinematics
-  It is defined forward because we tend to assign joint variables to know where the following robot is in the given space (SE(3)). It is
-  known by the following formmula:
+## Kinematic Diagram and DH-Frame Assignments of Spherical Mechanical Manipulator
 
-  $$\begin{bmatrix}
-  Rot & Pos \\
-  0 & 1
-  \end{bmatrix}$$
-
-  Where the $Rot$ is the rotation matrix of the frame of the end effector to its world frame, and the $Pos$ is the position of the two frames
-  between the end effector and its world frame. The row vector [0  1] act as a scoping on the following manipualtor itself
-
-#### DH-Parameters
+## Denavit-Hartenberg Parametric Table of Spherical Mechanical Manipulator
   Jacques Denavit and Richard Hartenberg created a standardized set of parameters to be able to shorthand the computation of the spatial linkages
   These are known to be as the Denavit Hartenberg Notation:
 
@@ -59,8 +38,10 @@
    <li> Getting the Dot Product of all Homogenous Transformation Matrix together </li>
 </ol>
 
-### Inverse Kinematics
- If the following Forward Kinematics focuses on the joint variables to find the position vector. The following Inverse Kinematics is the opposite, where we find the joint variables of the system via the use of position vector.
+## Homogenous Transformation Matrix of Spherical Mechanical Manipulator
+
+## Inverse Kinematics of Spherical Mechanical Manipulator
+If the following Forward Kinematics focuses on the joint variables to find the position vector. The following Inverse Kinematics is the opposite, where we find the joint variables of the system via the use of position vector.
  The most effective method of solving the Inverse Kinematics is Numerical Methods, however this is accurate however this is compicated to compute. Graphical Method is the best method of solving Serial Manipulators, however, One must consider the implications of having
  a undefined Solutions. 
 #### Inverse Kinematics Graphical Method
@@ -70,21 +51,6 @@
   <li>Law of Cosines</li>
   <li>Pythagorean Theorem</li>
  </ul>
-
-## Procedure Forward Kinematics:
- <ol>
- <li>Draw the kinematic diagram with labels of the Spherical Manipulator.	</li>
- <li>Assign frames using D-H Frame Rules.</li>
- <li>Obtain the Parametric Table.</li>
- <li>Program the Forward Kinematics in Python and MATLAB.</li>
- <li>Perform the experimentation of comparing the position vector from the Python program to the MATLAB program.</li>
- <li><ol>Provide the following as output of the experiment:
- <li>Kinematic Diagram with labels and frames.</li>
- <li>Parametric Table</li>
- <li>MATLAB and Python</li>
- <li>5 trials in table for the comparison of Forward Kinematics in MATLAB and Python</li>
- </ol></li>
- </ol>
 
 ## Procedure Inverse Kinematics:
 <ol>
@@ -97,6 +63,10 @@
 <li>5 trials in table for the comparison of Inverse Kinematics in MATLAB and Python</li>
 </ol></li>
 
+## Forward and Inverse Kinematics Graphical User Interface (GUI) Calculator of Spherical Manipulator:
+
+## References
+ 
 ## D-H Parametric table of Spherical Manipulator
 </ol>
 
@@ -112,3 +82,12 @@
 
 </ol>
  
+## Proponents:
+
+ Dianne Mae Ortega
+ 
+ Ivan Russ Oxillo
+ 
+ Jancen Mendoza
+ 
+ Lyndon Allen Sales
