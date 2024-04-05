@@ -105,14 +105,15 @@ in this matrix:
 
 ![image](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/83767299/4badcfc0-a7f2-469d-aea8-d40275d1b1e9)
 
-In this Video the following parameters are beiing subsituted on the video itself.
+In this Video the following parameters are being substituted on the video itself.
+It is a 4x4 matrix that combines rotation and translation of an object in 3D space.
 
 ## Inverse Kinematics of Spherical Mechanical Manipulator
 Video (Please Click the Image Below):
 [![IKinGraphical](https://i.ytimg.com/vi/VUPBvH8MFUk/maxresdefault.jpg)](https://youtu.be/VUPBvH8MFUk)
 
 While the Forward Kinematics focuses on finding the coordinates of the systems based on its end effectors. The Inverse Kinematics, verbosely, does the oppposite.
-If the Forward Kinematics is mainly purpose is to simulate a mechanical manipulator. The Inverse Kinematics invovles the control and manipulation of the end effector
+If the Forward Kinematics is mainly purpose is to simulate a mechanical manipulator. The Inverse Kinematics involves the control and manipulation of the end effector
 and outputs the certain joint angles to move so. There are two different methods on solving Inverse Kinematics (1) Numerical Solution which involves Euler's Method,
 and (2) Grapphcial Solution which uses Trigonometry on solving these videos.
 
