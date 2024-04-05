@@ -175,6 +175,6 @@ Thank you.
  
  Project Supervisor:  Ivan Russ Oxillo
  
- Project QA:  Jancen Mendoza
+ Project Quality:  Jancen Mendoza
  
- Programmer:  Lyndon Allen Sales
+ Project Programmer:  Lyndon Allen Sales
