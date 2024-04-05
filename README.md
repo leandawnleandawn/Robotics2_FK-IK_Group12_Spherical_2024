@@ -127,7 +127,35 @@ Video (Please Click the Image Below):
 
 This video is explained by the programmer is to explain comprehensively how the Forward Kinematics, Inverse Kinematics, the Model created via Robotics Toolbox and the GUI using TKinter and TTKBootstrap.
 
+### Additional Instructions (from your Programmer)
 
+Hi! Your Prograammer here. You might be interested on running `improved_main.py` however it raises some errors. I am here to cover all of that
+
+#### Prerequisites
+
+The following libraries needed for this are `numpy`, `roboticstoolbox-python`, `scipy`, `tkinter`, and `ttkbootstrap`. You need to run it on your terminal 
+(Make sure Python is installed)
+```
+pip install rvc3python
+pip install numpy
+pip install scipy
+pip install tkinter
+pip install ttkbootstrap
+```
+
+### FAQs
+
+Q: I am having a library error. What should I do?
+A: run `pip uninstall <library_name>` and `pip install <library_name>` itself. 
+Q: I do have python installed but I cannot run it on the command line
+A: Check this video [here](https://www.youtube.com/watch?v=jIunQSnzs1Y). 
+Q: Can I access it on other Operating Systems?
+A: Yes, you can. Primarily, This program is used on Ubuntu or Debian-Based Systems, as long as you have Python on your Personal Computer.
+It will run as it is
+
+Further issues must raised using the Issues Tab of this repository so that we can see the problem and such.
+
+Thank you.
 ## References:
 
  Moran, M. E. (2007). Evolution of robotic arms. Journal of Robotic Surgery, 1(2), 103–111. https://doi.org/10.1007/s11701-006-0002-x
