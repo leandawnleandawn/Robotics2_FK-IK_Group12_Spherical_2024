@@ -79,7 +79,7 @@ Where $R$ and $d$ are Rotation Matrix and Displacment Vector concatenate togethe
 To get more in-depth into the HTM, [you can watch it here](https://www.youtube.com/watch?v=4Y1_y9DI_Hw). To get things short, we can use the 
 Denavit Hartenberg Convention of Finding the HTM of a Manipulator.
 
-The Origin of the Denvait Hartenberg Parameters is baseed on the two frame assumptions - Rule Number 2 and Rule Number 3. In this case, we 
+The Origin of the Denvait Hartenberg Parameters is based on the two frame assumptions - Rule Number 2 and Rule Number 3. In this case, we 
 can generalize the Homogenous Transformation Matrix as described in Spong (2005):
 
 $$A = Rot_{z,\Theta}Trans_{z,d}Rot_{x,\alpha}Trans_{x,\alpha}$$
