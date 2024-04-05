@@ -70,17 +70,17 @@ The Following Video shows how this Spherical Manipulator gets assigned its own f
 Video (Please Click the Image Below):
 [![Denavit-Hartenberg Parametric Table](https://i.ytimg.com/vi/AdVCETLDfT8/maxresdefault.jpg)](https://youtu.be/AdVCETLDfT8)
 
-The Second step on finding the Forward Kinematics of the Given Manipulator is to find the Homogenous Transformation Matrix
+The Second step on finding the Forward Kinematics of the Given Manipulator is to find the Homogeneous Transformation Matrix
 of the given system. HTM is mathematically defined as the following:
 
 ![image](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/83767299/4b47744e-e6ee-484a-8960-ab094259ce2e)
 
-Where $R$ and $d$ are Rotation Matrix and Displacment Vector concatenate together into a single matrix. This defines the following.
+Where $R$ and $d$ are Rotation Matrix and Displacement Vector concatenate together into a single matrix. This defines the following.
 To get more in-depth into the HTM, [you can watch it here](https://www.youtube.com/watch?v=4Y1_y9DI_Hw). To get things short, we can use the 
-Denavit Hartenberg Convention of Finding the HTM of a Manipulator.
+Denavit Hartenberg Convention of finding the HTM of a Manipulator.
 
 The Origin of the Denvait Hartenberg Parameters is based on the two frame assumptions - Rule Number 2 and Rule Number 3. In this case, we 
-can generalize the Homogenous Transformation Matrix as described in Spong (2005):
+can generalize the Homogeneous Transformation Matrix as described in Spong (2005):
 
 $$A = Rot_{z,\Theta}Trans_{z,d}Rot_{x,\alpha}Trans_{x,\alpha}$$
 
@@ -97,10 +97,10 @@ The Video above shows how can we find the DH Parameters of a Spherical Manipulat
 The Image below shows the Frame Assignement and the DH Parameters of the Spherical Manipulator.
 ![421668234_403017508989038_658074442315959319_n](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/157699815/008f5e5c-eb10-42e5-ae67-f461739e19a0)
 
-## Homogenous Transformation Matrix of Spherical Mechanical Manipulator
+## Homogeneous Transformation Matrix of Spherical Mechanical Manipulator
 Video:
 [![HTM](https://i.ytimg.com/vi/a2cQWwoLQ5U/maxresdefault.jpg)](https://youtu.be/a2cQWwoLQ5U)
-From the original definition of the Homogenous Transformation Matrix under the Denavit Hartenberg Convention, the set of parameters can be subsitute
+From the original definition of the Homogeneous Transformation Matrix under the Denavit Hartenberg Convention, the set of parameters can be subsitute
 in this matrix:
 
 ![image](https://github.com/leandawnleandawn/Robotics2_FK-IK_Group12_Spherical_2024/assets/83767299/4badcfc0-a7f2-469d-aea8-d40275d1b1e9)
@@ -115,7 +115,7 @@ Video (Please Click the Image Below):
 While the Forward Kinematics focuses on finding the coordinates of the systems based on its end effectors. The Inverse Kinematics, verbosely, does the oppposite.
 If the Forward Kinematics is mainly purpose is to simulate a mechanical manipulator. The Inverse Kinematics involves the control and manipulation of the end effector
 and outputs the certain joint angles to move so. There are two different methods on solving Inverse Kinematics (1) Numerical Solution which involves Euler's Method,
-and (2) Grapphcial Solution which uses Trigonometry on solving these videos.
+and (2) Graphical Solution which uses Trigonometry on solving these videos.
 
 The Video shows how can you solve the Inverse Kinematics Problem using the Graphical Method.
 
