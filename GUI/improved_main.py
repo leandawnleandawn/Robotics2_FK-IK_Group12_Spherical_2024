@@ -313,7 +313,5 @@ class JBinWindow():
 robot = RoboticProgram()
 robot.style.theme_use('simplex')
 
-default_font = nametofont('TkDefaultFont')
-default_font.configure(family="Helvetica", size=12)
-robot.mainloop()
+
 
