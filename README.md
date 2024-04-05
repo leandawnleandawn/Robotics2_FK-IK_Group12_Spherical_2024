@@ -147,10 +147,15 @@ pip install ttkbootstrap
 ### FAQs
 
 Q: I am having a library error. What should I do?
+
 A: run `pip uninstall <library_name>` and `pip install <library_name>` itself. 
+
 Q: I do have python installed but I cannot run it on the command line
+
 A: Check this video [here](https://www.youtube.com/watch?v=jIunQSnzs1Y). 
+
 Q: Can I access it on other Operating Systems?
+
 A: Yes, you can. Primarily, This program is used on Ubuntu or Debian-Based Systems, as long as you have Python on your Personal Computer.
 It will run as it is
 
