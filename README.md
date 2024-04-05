@@ -130,7 +130,7 @@ This video is explained by the programmer is to explain comprehensively how the 
 
 ### Additional Instructions (from your Programmer)
 
-Hi! Your Prograammer here. You might be interested on running `improved_main.py` however it raises some errors. I am here to cover all of that
+Hi! Your Programmer here. You might be interested on running `improved_main.py` however it raises some errors. I am here to cover all of that
 
 #### Prerequisites
 
