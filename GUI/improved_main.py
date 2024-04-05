@@ -10,8 +10,8 @@ class RoboticProgram(ttkb.Window):
     
     def __init__(self):
         super().__init__()
-        
-        self.title("Kinematic Analysis")
+
+        self.title("Kinematic Analysis')
         self.geometry('1280x720')
         self.resizable(width=False, height=False)
         ML = ttkb.Labelframe(bootstyle='light')
