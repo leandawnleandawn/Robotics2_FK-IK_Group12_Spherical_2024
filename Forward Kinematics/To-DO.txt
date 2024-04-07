@@ -1,4 +1,4 @@
 A. Kinematic Diagram with lables and frames. (DONE)
 B. Parametric Table ( DONE)
 C. Python and MATLAB codes. ( DONE )
-D. 5 trials in table for comparison of Forward Kinematics in MATLAB and Python
+D. 5 trials in table for comparison of Forward Kinematics in MATLAB and Python ( DONE )
