@@ -1,5 +1,5 @@
 import math
-from roboticstoolbox import SerialLink, PrismaticDH, RevoluteDH
+from roboticstoolbox import SerialLink, PrismaticDH, RevoluteDH 
 
 
 def defineLinks():
@@ -19,3 +19,4 @@ sphericalManipulator = SerialLink([H01, H12, H23])
 
 print(sphericalManipulator)
 sphericalManipulator.teach([0,0,0])
+

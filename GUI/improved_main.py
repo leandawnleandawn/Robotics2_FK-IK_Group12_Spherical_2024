@@ -10,8 +10,8 @@ class RoboticProgram(ttkb.Window):
     
     def __init__(self):
         super().__init__()
-        
-        self.title("Kinematic Analysis")
+
+        self.title("Kinematic Analysis')
         self.geometry('1280x720')
         self.resizable(width=False, height=False)
         ML = ttkb.Labelframe(bootstyle='light')
@@ -316,4 +316,5 @@ robot.style.theme_use('simplex')
 default_font = nametofont('TkDefaultFont')
 default_font.configure(family="Helvetica", size=12)
 robot.mainloop()
+
 
